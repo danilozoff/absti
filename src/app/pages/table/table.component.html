@@ -1,0 +1,13 @@
+<div style="text-align:center; margin-bottom: 20px;">
+    <h3>Usuarios</h3>
+    
+    <div style="text-align: center;">
+      <igx-grid [data]="users()" width="800px" height="400px" style="margin: auto" [allowFiltering]="true">
+        <igx-column field="name" header="Nombre"  dataType="string"></igx-column>
+        <igx-column field="age" header="Edad" dataType="string"></igx-column>
+        <igx-column field="dateOfBirth" header="Fecha de nacimiento" dataType="string"></igx-column>
+        <igx-column field="dni" header="DNI" dataType="string"></igx-column>
+        <igx-column field="phoneNumber" header="Teléfono" dataType="string"></igx-column>
+      </igx-grid>
+    </div>
+</div>
