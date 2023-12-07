@@ -3,14 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'form',
+    path: 'register',
     loadChildren: () => import('./pages/form/form.module').then(m => m.FormModule),
   },
   {
-    path: 'table',
+    path: 'users',
     loadChildren: () => import('./pages/table/table.module').then(m => m.TableModule),
   },
-  { path: '**',  redirectTo: 'form' }
+  { path: '**',  redirectTo: 'register' }
 ];
 
 @NgModule({
